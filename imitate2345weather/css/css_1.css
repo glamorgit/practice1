@@ -1,0 +1,724 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px/1.5 SimSun, Arial, Tahoma, Helvetica, sans-serif;
+  background-color: #c9e2f9;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+header {
+  position: relative;
+  width: 680px;
+  height: 70px; 
+  margin: 0 auto;
+  padding: 0 0 0 320px;
+}
+.search_submit, nav li.first_li a, .nav_r {
+  background: url(../img/global-141121.png) no-repeat;
+}
+.logo {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+}
+.search {
+  padding-top: 21px;
+}
+.search_input {
+  float: left;
+  border: none;
+  width: 256px;
+  height: 17px;
+  padding: 10px 0 10px 8px;
+  border-radius: 3px 0 0 3px;
+  font: 14px "Microsoft Yahei";
+}
+.search_input:focus {
+  outline: none;
+}
+input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+input:-ms-input-placeholder {
+  opacity: 0.7;
+}
+input::-moz-placeholder {
+  opacity: 0.4;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.search_submit {
+  float: left;
+  width: 100px;
+  height: 37px;
+  padding-left: 15px;
+  cursor: pointer;
+  color: white;
+  font: bold 14px/1.5 SimSun;
+  border: none;
+  background-position: -264px 0;
+}
+.search_submit:hover {
+  background-position: -375px 0;
+}
+.adbox_header {
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+.adbox_header a {
+  cursor: default;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: relative;
+  width: 1000px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #338ad1;
+}
+nav li {
+  float: left;
+  position: relative;
+  display: inline;
+  padding-right: 1px;
+}
+nav li a {
+  display: block;
+  width: 88px;
+  font: 16px "Microsoft Yahei";
+  line-height: 2.4;
+  text-align: center;
+  border: 1px solid #338ad1;
+  color: white;
+  text-decoration: none;
+}
+nav li.first_li a {
+  border: none;
+  padding: 1px;
+  background-position: -225px -100px;
+}
+nav li a:hover {
+  background-color: #1e77c9;
+  border-color: #1972af;
+}
+nav li.first_li a:hover {
+  background-position: 0 -100px;
+}
+nav li a.current {
+  background-color: #186fbf;
+  border-color: #0f66a2;
+}
+nav li span {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 1px;
+  height: 24px;
+  background-color: #54a6e8;
+}
+.nav_btn_box {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.nav_btn_box a {
+  float: left;
+}
+.tools {
+  float: left;
+}
+.tools .tools_btn {
+  width: 66px;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 20px;
+  border: 1px solid #338ad1;
+  border-radius: 2px;
+  background: #fff url(../img/tianqi-mobile.jpg) no-repeat;
+  background-position: 7px 5px;
+  text-decoration: none;
+  color: #333;
+  font-family: "Microsoft Yahei";
+}
+.add_fav {
+  float: left;
+  margin-left: 4px;
+}
+.add_fav .fav_btn {
+  width: 54px;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 24px;
+  border: 1px solid #338ad1;
+  background: #fff url(../img/favorite_icon.png) no-repeat;
+  background-position: 5px 3px;
+  text-decoration: none;
+  color: #333;
+  font-family: "Microsoft Yahei";
+}
+.tools .tools_btn:hover {
+  color: #3097fd;
+  border: 1px solid #d5d5d5;
+}
+.add_fav .fav_btn:hover {
+  color: #f60;
+}
+.nav_r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 40px;
+  background-position: 0 -50px;
+}
+
+section {
+  position: relative;
+  width: 1000px;
+  margin: 10px auto;
+}
+
+.friend_links {
+  float: left;
+  width: 710px;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.friend_links .meta {
+  height: 240px;
+  padding: 0 8px;
+  border: 2px solid #98ceff;
+}
+.friend_links dl {
+  border-top: 1px dotted #9ad0fd;
+  padding: 13px 0;
+  margin-top: -1px;
+}
+.friend_links dt {
+  float: left;
+  width: 62px;
+  line-height: 1.8;  
+  padding-right: 10px;
+  margin: 3px 4px 0 4px;
+  background: url(../img/index.png) no-repeat;
+  background-position: 0 0;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  cursor: default;
+}
+.friend_links ul {
+  overflow: hidden;
+}
+.friend_links li {
+  float: left;
+  width: 112px;
+  height: 32px;
+  padding-left: 10px;
+  list-style: none;
+}
+.friend_links a {
+  font-size: 14px;
+  line-height: 2.4;
+  color: #333;
+  text-decoration: none;
+}
+.friend_links a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
+
+.weather_info {
+  float: right;
+  width: 280px;
+  height: 240px;
+  background-color: white;
+  border-radius: 2px;
+}
+.weather_info .wtitle {
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 12px;
+  border-bottom: 1px solid #d2e9ff;
+  background-color: #eff7ff;
+}
+.weather_info .wtitle h2 {
+  font: 18px "Microsoft Yahei";
+  color: #0065d6;
+  cursor: default;
+}
+.weather_info .wmeta {
+  position: relative;
+}
+.weather_info .today {
+  height: 135px;
+  text-align: center;
+}
+.weather_info .tomorrow {
+  height: 57px;
+  font: 16px/60px "Microsoft Yahei";
+  border-top: 1px dotted #9ad0fd;
+  text-align: center;
+}
+.weather_info .layer {
+  position: absolute;
+  left: 0;
+  width: 276px;
+  border: 2px solid #268dea;
+  display: none;
+}
+.weather_info .today:hover .today_layer {
+  top: 0;
+  height: 132px;
+  display: block;
+}
+.weather_info .tomorrow:hover .tomorrow_layer {
+  top: 135px;
+  height: 57px;
+  display: block;
+}
+.weather_info .today .dtitle {
+  font: 16px/24px "Microsoft Yahei";
+  padding: 10px 0;
+  margin-bottom: 6px;
+}
+.weather_info .today .title,.weather_info .today .temperature,.weather_info .today .wind {
+  display: inline-block;
+  vertical-align: middle;
+}
+.weather_info .today .temperature {
+  font-size: 20px;
+  padding: 0 30px;
+}
+.weather_info .low {
+  color: #268dea;
+}
+.weather_info .high {
+  color: #f60;
+}
+.weather_info .today .day,.weather_info .today .night {
+  float: left;
+  width: 136px;
+}
+.weather_info .day p,.weather_info .night p {
+  font-size: 14px;
+}
+.weather_info .today .icon_today {
+  width: 55px;
+  height: 45px;
+  margin: 0 auto;
+  display: block;
+}
+.weather_info .today .icon_day {
+  background-image: url(../img/w_day_l.png);
+  background-position: 0 -90px;  
+}
+.weather_info .today .icon_night {
+  background-image: url(../img/w_night_l.png);
+  background-position: -60px 0;
+}
+.weather_info .line {
+  float: left;
+  width: 1px;
+  height: 55px;
+  border-left: 1px dotted #268dea;
+  margin-top: 8px;
+}
+.weather_info .tomorrow .title,.weather_info .tomorrow .temperature,.weather_info .tomorrow .day,.weather_info .tomorrow .icon_tomorrow,.weather_info .tomorrow .day p {
+  display: inline-block;
+}
+.weather_info .tomorrow .icon_tomorrow {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background-image: url(../img/w_day.png);
+  background-position: -120px -32px;
+}
+.weather_info .tomorrow .temperature {
+  padding: 0 15px;
+}
+
+.advert_container {
+  position: relative;
+  width: 1000px;
+  height: 162px;
+  background-color: #333;
+  overflow: hidden;
+}
+.advert_container a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 162px;
+  display: block;
+}
+.pain {
+  float: left;
+  width: 10px;
+  height: 12px;
+  border-radius: 1.5px;
+  margin: 5px 6px;
+  background-color: #c9e2f9;
+}
+@keyframes pain {
+  from {margin-left: 0;}
+  to {margin-left: 22px;}
+}
+#pain1 {
+  margin-left: 0;
+  animation: pain 200ms linear infinite;
+}
+#pain2 {
+  margin-left: 0;
+  animation: pain 200ms linear infinite;
+}
+.pain_last {
+  margin-right: 0;
+}
+.advert {
+  float: left;
+  height: 118px;
+  width: 1000px;
+  background-color: #555;
+  background-image: url(../img/1001.gif);
+  font-size: 0;
+  -webkit-perspective: 700;
+}
+.advert:after {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+@keyframes cardbox {
+  0% {left: -100px; transform: rotateY(0deg);}
+  10% {left: 280px; transform: rotateY(0deg);}
+  20% {left: 390px; transform: rotateY(180deg);}
+  30% {left: 500px; transform: rotateY(360deg);}
+  40% {left: 610px; transform: rotateY(540deg);}
+  50% {left: 720px; transform: rotateY(720deg);}
+  60% {left: 1010px; transform: rotateY(720deg);}
+  100% {left: 1010px; transform: rotateY(720deg);}
+}
+#cardBox {
+  position: relative;
+  left: -100px;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: cardbox 10s linear infinite;
+}
+#cardBox .card {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+}
+#cardBox .card_front {
+  transform: translate3d(0,0,10px) rotateY(0deg);
+}
+#cardBox .card_back {
+  transform: translate3d(0,0,-10px) rotateY(180deg);
+}
+.cardside {
+  position: absolute;
+  width: 20px;
+  height: 90px;
+}
+.card_left {
+  left: -10px;
+  transform: rotateY(-90deg);
+}
+.card_right {
+  right: -10px;
+  transform: rotateY(90deg);
+}
+.cards {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  visibility: hidden;
+}
+@keyframes card1 {
+  0% {transform: rotateY(-180deg);}
+  10% {transform: rotateY(-180deg); visibility: hidden;}
+  11% {transform: rotateY(-180deg); visibility: visible;}
+  30% {transform: rotateY(-180deg);}
+  40% {transform: rotateY(0deg);}
+  99% {transform: rotateY(0deg); visibility: visible;}
+  100% {transform: rotateY(0deg); visibility: hidden;}
+}
+@keyframes card10 {
+  0% {transform: scale(0.6,0.6) rotate3d(1,1,0,0deg); visibility: visible;}
+  30% {transform: scale(0.6,0.6) rotate3d(1,1,0,1080deg);}
+  40% {transform: scale(1,1) rotate3d(1,1,0,1080deg);}
+  100% {transform: scale(1,1) rotate3d(1,1,0,1080deg);}
+}
+#card1 {
+  left: 200px;
+  animation: card1 10s linear infinite;
+}
+@keyframes card2 {
+  0% {transform: rotateY(-180deg);}
+  20% {transform: rotateY(-180deg); visibility: hidden;}
+  21% {transform: rotateY(-180deg); visibility: visible;}
+  40% {transform: rotateY(-180deg);}
+  50% {transform: rotateY(0deg);}
+  99% {transform: rotateY(0deg); visibility: visible;}
+  100% {transform: rotateY(0deg); visibility: hidden;}
+}
+@keyframes card20 {
+  0% {transform: scale(0.6,0.6) rotate3d(-1,1,0,0deg); visibility: visible;}
+  40% {transform: scale(0.6,0.6) rotate3d(-1,1,0,1440deg);}
+  50% {transform: scale(1,1) rotate3d(-1,1,0,1440deg);}
+  100% {transform: scale(1,1) rotate3d(-1,1,0,1440deg);}
+}
+#card2 {
+  left: 230px;
+  animation: card2 10s linear infinite;
+}
+@keyframes card3 {
+  0% {transform: rotateY(-180deg);}
+  30% {transform: rotateY(-180deg); visibility: hidden;}
+  31% {transform: rotateY(-180deg); visibility: visible;}
+  50% {transform: rotateY(-180deg);}
+  60% {transform: rotateY(0deg);}
+  99% {transform: rotateY(0deg); visibility: visible;}
+  100% {transform: rotateY(0deg); visibility: hidden;}
+}
+@keyframes card30 {
+  0% {transform: scale(0.6,0.6) rotate3d(1,1,0,0deg); visibility: visible;}
+  50% {transform: scale(0.6,0.6) rotate3d(1,1,0,1800deg);}
+  60% {transform: scale(1,1) rotate3d(1,1,0,1800deg);}
+  100% {transform: scale(1,1) rotate3d(1,1,0,1800deg);}
+}
+#card3 {
+  left: 260px;
+  animation: card3 10s linear infinite;
+}
+@keyframes card4 {
+  0% {transform: rotateY(-180deg);}
+  40% {transform: rotateY(-180deg); visibility: hidden;}
+  41% {transform: rotateY(-180deg); visibility: visible;}
+  60% {transform: rotateY(-180deg);}
+  70% {transform: rotateY(0deg);}
+  99% {transform: rotateY(0deg); visibility: visible;}
+  100% {transform: rotateY(0deg); visibility: hidden;}
+}
+@keyframes card40 {
+  0% {transform: scale(0.6,0.6) rotate3d(-1,1,0,0deg); visibility: visible;}
+  60% {transform: scale(0.6,0.6) rotate3d(-1,1,0,2160deg);}
+  70% {transform: scale(1,1) rotate3d(-1,1,0,2160deg);}
+  100% {transform: scale(1,1) rotate3d(-1,1,0,2160deg);}
+}
+#card4 {
+  left: 290px;
+  animation: card4 10s linear infinite;
+}
+.cards .card {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  backface-visibility: hidden;
+}
+.cards .card_front {
+  transform: rotateY(0deg);
+}
+.cards .card_back {
+  transform: rotateY(180deg);
+}
+.cards .card p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  font: 36px/80px STXingkai;
+  text-align: center;
+  color: #d9d919;
+}
+
+.picture {
+  float: left;
+  position: relative;
+}
+.pic_container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.pics {
+  position: relative;
+  width: 2400px;
+}
+.pics a {
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+.pic_nails {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 70px;
+}
+.pic_nails_back {
+  background-color: white;
+  opacity: 0.3;
+}
+.pic_nail {
+  float: left;
+  width: 70px;
+  height: 50px;
+  margin: 9px 0px 9px 7px;
+  border: 1px solid transparent;
+  opacity: 0.5;
+}
+
+.video {
+  float: right;
+  position: relative;
+}
+.video_box {
+  width: 580px;
+  height: 290px;
+  padding: 5px;
+  background-color: black;
+}
+.video_p {
+  position: absolute;
+  right: 6px;
+  width: 100px;
+  height: 80px;
+  border: 1px solid #666;
+  overflow: hidden;
+}
+.video_1 {
+  top: 19px;
+}
+.video_2 {
+  top: 109px;
+}
+.video_3 {
+  top: 199px;
+}
+.video_p img {
+  position: absolute;
+}
+.video_t {
+  position: relative;
+  top: 0;
+}
+.video_t1 {
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 16px;
+  text-align: center;
+  color: red;
+}
+.video_t2 {
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  height: 120px;
+  background-color: #3e91dd;
+  margin-top: 20px;
+  clear: both;
+}
+footer .wrap {
+  width: 1000px;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: default;
+}
+footer p {
+  height: 22px;
+  padding: 3px 0;
+}
+footer .foot1 a {
+  font-size: 14px;
+  color: white;
+}
+footer .foot1 a:hover {
+  color: #f60;
+}
+footer .foot1 span {
+  color: #94bfe0;
+  margin: 0 5px;
+}
+footer .foot2 a,footer .foot2 .copyright {
+  font-size: 12px;
+  color: #333;
+  margin: 0 5px;
+}
+footer .foot2 a:hover {
+  color: #f60;
+}
+footer .foot2 .back_index {
+  display: inline-block;
+  width: 84px;
+  height: 22px;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #4571b1;
+  background-image: url(../img/global-141121.png);
+  background-position: 0 -175px;
+  text-decoration: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  
+  
+  
+  
+  
+  
+  

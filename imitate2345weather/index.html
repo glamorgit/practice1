@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>仿2345天气预报</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/css_1.css" />
+  <script src="js/js_1.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <a href="#" target="_blank">
+      <img src="img/logo160722.png" alt="2345天气预报" />
+    </a>
+  </div>
+  <div class="search">
+    <form action="#" id="searchForm" name="searchForm" method="post">
+      <input type="text" name="searchInput" class="search_input" placeholder="搜索城市" />
+      <input type="submit" name="searchSubmit" class="search_submit" value="查看天气" />
+    </form>
+  </div>
+  <div class="adbox_header">
+    <a href="#" target="_blank">
+      <img src="img/authority239x54.png" alt="中国最精准的天气预报" />
+    </a>
+  </div>
+</header>
+
+<main>
+
+<nav>
+  <ul>
+    <li class="first_li">
+      <a href="#">本地天气</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="#">空气质量</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="#">历史天气</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="#">卫星云图</a>
+      <span></span>
+    </li>
+    <li>
+      <a class="current" href="#">天气网址</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="#">国际天气</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="#">星球联盟</a>
+    </li>
+  </ul>
+  <div class="nav_btn_box">
+    <div class="tools">
+      <a class="tools_btn" href="#">手机看天气</a>
+    </div>
+    <div class="add_fav">
+      <a class="fav_btn" href="#">加入收藏</a>
+    </div>
+  </div>
+  <span class="nav_r"></span>
+</nav>
+
+<section class="clearfix">
+  <div class="friend_links">
+    <div class="meta">
+      <dl>
+        <dt>国内天气</dt>
+        <dd>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">15天天气预报</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">央视天气网</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">中国气象局</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">中央气象台</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">中国台风网</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">天气中国网</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">围观天气</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">中国地震信息网</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">中国天气网</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>天气信息</dt>
+        <dd>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">天气视频</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">空气质量</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">卫星云图</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">交通天气</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">机场天气</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">天气预警</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">降水量预报</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">天气插件</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">天气百科</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>	
+      <dl>
+        <dt>天气生活</dt>
+        <dd>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">交通出行</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">世界时间</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">万年历</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">星球联盟</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  
+  <div class="weather_info">
+    <div class="wtitle">
+      <h2>大连市天气预报</h2>
+    </div>
+    <div class="wmeta">
+      <div class="today">
+        <div class="dtitle">
+          <p class="title">今天</p>
+          <div class="temperature">
+            <span class="low">2℃</span>
+            ~
+            <span class="high">8℃</span>
+          </div>
+          <p class="wind">东南风</p>
+        </div>
+        <div class="day">
+          <div class="icon_today icon_day">
+            <span></span>
+          </div>
+          <p><span>白天：</span><span>晴</span></p>
+        </div>
+        <div class="line"></div>
+        <div class="night">
+          <div class="icon_today icon_night">
+            <span></span>
+          </div>
+          <p><span>夜间：</span><span>小雨</span></p>
+        </div>
+        <a class="layer today_layer" href="#" target="_blank"></a>
+      </div>
+      <div class="tomorrow">
+        <p class="title">明天</p>
+        <div class="temperature">
+          <span class="low">0℃</span>
+          ~
+          <span class="high">8℃</span>
+        </div>
+        <div class="day">
+          <div class="icon_tomorrow">
+            <span></span>
+          </div>
+          <p>阴转多云</p>
+        </div>
+        <a class="layer tomorrow_layer" href="#" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="advert_container">
+    <div class="pain" id="pain1"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain pain_last"></div>
+    <div class="advert" id="advert">
+      <div id="cardBox">
+        <div class="card card_front">
+          <img src="img/1002.png" />
+        </div>
+        <div class="card card_back">
+          <img src="img/1002.png" />
+        </div>
+        <div class="cardside card_left">
+          <img src="img/10021.png" />
+        </div>
+        <div class="cardside card_right">
+          <img src="img/10021.png" />
+        </div>
+      </div>
+      <div class="cards" id="card1">
+        <div class="card card_front">
+          <img src="img/1003.png" />
+          <p id="p1">恭</p>
+        </div>
+        <div class="card card_back">
+          <img src="img/10031.png" />
+        </div>
+      </div>
+      <div class="cards" id="card2">
+        <div class="card card_front">
+          <img src="img/1003.png" />
+          <p id="p2">贺</p>
+        </div>
+        <div class="card card_back">
+          <img src="img/10031.png" />
+        </div>
+      </div>
+      <div class="cards" id="card3">
+        <div class="card card_front">
+          <img src="img/1003.png" />
+          <p id="p3">新</p>
+        </div>
+        <div class="card card_back">
+          <img src="img/10031.png" />
+        </div>
+      </div>
+      <div class="cards" id="card4">
+        <div class="card card_front">
+          <img src="img/1003.png" />
+          <p id="p4">春</p>
+        </div>
+        <div class="card card_back">
+          <img src="img/10031.png" />
+        </div>
+      </div>
+    </div>
+    <div class="pain" id="pain2"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain"></div>
+    <div class="pain pain_last"></div>
+    <a href="#" target="_blank" rel="nofollow" onmouseover="mOverAdvert()" onmouseout="mOutAdvert()"></a>
+  </div>
+</section>
+
+<section class="clearfix">
+  <div class="picture">
+    <div class="pic_container" id="picCont">
+      <div class="pics" id="pics" onmouseover="stopMove()" onmouseout="startMove()">
+        <a href="#" target="_blank">
+          <img src="img/2001.jpg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/2002.jpg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/2003.jpg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/2004.jpg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/2005.jpg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="img/2001.jpg" />
+        </a>
+      </div>
+    </div>
+    <div class="pic_nails pic_nails_back"></div>
+    <div class="pic_nails">
+      <a class="pic_nail" href="#picCont" onclick="picClick(this,0)">
+        <img src="img/20011.jpg" />
+      </a>
+      <a class="pic_nail" href="#picCont" onclick="picClick(this,1)">
+        <img src="img/20021.jpg" />
+      </a>
+      <a class="pic_nail" href="#picCont" onclick="picClick(this,2)">
+        <img src="img/20031.jpg" />
+      </a>
+      <a class="pic_nail" href="#picCont" onclick="picClick(this,3)">
+        <img src="img/20041.jpg" />
+      </a>
+      <a class="pic_nail" href="#picCont" onclick="picClick(this,4)">
+        <img src="img/20051.jpg" />
+      </a>
+    </div>
+  </div>
+
+  <div class="video">
+    <div class="video_box">
+      <video id="video" width="470" height="290" controls autoplay muted onplaying="videoPlaying()" onpause="videoPause()" onended="videoEnded()">
+        <source id="source1" src="video/video1.mp4" type="video/mp4" />
+        <source id="source2" src="video/video1.ogg" type="video/ogg" />
+        <object id="obj" data="video/video1.mp4" width="470" height="290">
+          <embed id="emb" src="video/video1.ogg" width="470" height="290" />
+        </object>
+        您的浏览器不支持视频播放！
+      </video>
+      <div class="video_p video_1" onclick="videoClick(1)">
+        <img src="img/video1.jpg" />
+        <div class="video_t" onmouseover="mOverVideo(this)" onmouseout="mOutVideo(this)">
+          <p class="video_t1" id="video1"></p>
+          <p class="video_t2">互联网普惠共享</p>
+        </div>
+      </div>
+      <div class="video_p video_2" onclick="videoClick(2)">
+        <img src="img/video2.jpg" />
+        <div class="video_t" onmouseover="mOverVideo(this)" onmouseout="mOutVideo(this)">
+          <p class="video_t1" id="video2"></p>
+          <p class="video_t2">“环球”宇宙之旅</p>
+        </div>
+      </div>
+      <div class="video_p video_3" onclick="videoClick(3)">
+        <img src="img/video3.jpg" />
+        <div class="video_t" onmouseover="mOverVideo(this)" onmouseout="mOutVideo(this)">
+          <p class="video_t1" id="video3"></p>
+          <p class="video_t2">美丽的大自然</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="foot1">
+      <a href="#" rel="nofollow" target="_blank">意见反馈</a>
+      <span>|</span>
+      <a href="#" rel="nofollow" target="_blank">更正您的地理位置</a>
+      <span>|</span>
+      <a href="#" rel="nofollow" target="_blank">天气插件</a>
+      <span>|</span>
+      <a href="#" target="_blank">手机网页版</a>
+      <span>|</span>
+      <a href="#" target="_blank">手机APP官网</a>
+    </p>
+    <p class="foot2">
+      <a href="#" target="_blank">网站地图</a>
+      <a href="#" target="_blank">XML地图</a>
+      <span class="copyright">版权所有 © 2345.com</span>
+      <a href="#" target="_blank" rel="nofollow">ICP证沪B2-20120099</a>
+      <a href="#" class="back_index">返回首页</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
